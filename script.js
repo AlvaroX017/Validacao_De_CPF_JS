@@ -1,6 +1,6 @@
 function validaCpf(cpf){
     var quant = cpf.length;
-    if(quant != 11){
+    if(quant != 11 || /^(\d)\1{10}$/.test(cpf)){
     return false;
     }
     else{
