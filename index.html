@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./favicon.ico">
+    <title>Validador de CPF</title>
+
+    <!--Bootstrap Theme Quartz-->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="page-header">Validador de CPF</h1>
+            <p>Teste se o CPF é válido!</p>
+        </div>
+
+    </div>
+    <div class="container formulario">
+        <form>
+            <div class="col-auto">
+                <h2><span class="input-group-addon" id="sizing-addon1">CPF </h2>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control form-control-lg" placeholder="Digite o cpf para validação ..."
+                         id="input_cpf">
+                </div>
+                <small class="form-text text-muted">Digite somente numeros</small>
+            </div>
+            <button type="button" class="btn btn-info" onclick="validacao()">Validar</button>
+
+        </form>
+    </div>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            <strong>Seu CPF é válido</strong>
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            <strong>Seu CPF não é válido</strong>
+        </div>
+    </div>
+
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+
+<script src="./script.js"></script>
+</html>
